@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sanghyun Lee: Lightbox</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css" >
+
+</head>
+<body>
+
+	<div class="controls">
+			<button type="button" class="control" data-filter="all">All</button>
+			<button type="button" class="control" data-toggle=".red">Red</button>
+			<button type="button" class="control" data-toggle=".orange">Orange</button>
+			<button type="button" class="control" data-toggle=".yellow">Yellow</button>
+			<button type="button" class="control" data-toggle=".green">Green</button>
+	</div>
+
+
+	<div class = "gallery container">
+		<a class="example-image-link mix orange" href="img/1.jpg" data-lightbox='gallery' data-title="Oranges"><img class="example-image" src="img/1.jpg" alt='Oranges'></a>
+		<a class="example-image-link mix yellow" href="img/2.jpg" data-lightbox='gallery' data-title="Bananas"><img class="example-image" src="img/2.jpg" alt="Bananas"></a>
+		<a class="example-image-link mix yellow" href="img/3.jpg" data-lightbox='gallery' data-title="Mangos"><img class="example-image" src="img/3.jpg" alt="Mangos"></a>
+		<a class="example-image-link mix green" href="img/4.jpg" data-lightbox='gallery' data-title="Kiwis"><img class="example-image" src="img/4.jpg" alt="Kiwis"></a>
+		<a class="example-image-link mix red" href="img/5.jpg" data-lightbox='gallery' data-title="Strawberry"><img class="example-image" src="img/5.jpg" alt="Strawberry"></a>
+		<a class="example-image-link mix red" href="img/6.jpg" data-lightbox='gallery' data-title="Raspberries"><img class="example-image" src="img/6.jpg" alt="Raspberries"></a>
+		<a class="example-image-link mix green" href="img/7.jpg" data-lightbox='gallery' data-title="Green Apples"><img class="example-image" src="img/7.jpg" alt="Green Apples"></a>
+		<a class="example-image-link mix red" href="img/8.jpg" data-lightbox='gallery' data-title="Watermelons"><img class="example-image" src="img/8.jpg" alt="Watermelons"></a>
+		<a class="example-image-link mix orange" href="img/9.jpg" data-lightbox='gallery' data-title="Peaches"><img class="example-image" src="img/9.jpg" alt="Peaches"></a>
+
+	</div>
+
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+
+	<script>
+			var containerEl = document.querySelector('.container');
+
+			var mixer = mixitup(containerEl);
+	</script>
+
+</body>
+</html>
