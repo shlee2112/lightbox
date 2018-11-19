@@ -67,7 +67,7 @@ body {
 
 .control[data-filter=".red"],
 .control[data-toggle=".red"] {
-    color: #FF0000;
+    color: #ff3232;
 }
 
 .control[data-filter=".orange"],
@@ -82,7 +82,7 @@ body {
 
 .control[data-filter=".green"],
 .control[data-toggle=".green"] {
-    color: #008000;
+    color: #4ca64c;
 }
 
 
