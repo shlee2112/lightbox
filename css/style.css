@@ -47,6 +47,9 @@ h1{
     background: #3f3f3f;
 }
 
+.control:focus{
+  border:2px solid white;
+}
 
 
 .control[data-filter]:after,
